@@ -1,0 +1,161 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.header{
+    background-color: #f5ead4;
+    margin: 8px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 150px;
+}
+
+.logo .logo-link{
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: bold;
+    color: #131313;
+}
+
+.navbar-nav{
+    display: flex;
+}
+
+.navbar-nav .nav-item{
+    list-style: none;
+    padding: 10px;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    color: #131313;
+}
+
+.banner-content{
+    padding: 0 30px;
+}
+
+.banner-title{
+    text-align: center;
+    font-size: 60px;
+    font-weight: 800;
+    padding: 60px 0 0;
+    color: #131313;
+}
+
+.banner-text{
+    max-width: 800px;
+    text-align: center;
+    margin: 35px auto 20px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    color: lightslategray;
+}
+
+.primary-btn{
+    background-color: #FF900E;
+    color: #fff;
+    padding: 20px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.banner-img{
+    text-align: center;
+    padding: 30px 0;
+}
+
+.banner-img img{
+    width: 70%;
+}
+
+.feature{
+    padding: 40px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.feature .feature-image{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+}
+
+.feature .feature-image img{
+    width: 270px;
+    height: 270px;
+    object-fit: contain;
+}
+
+.feature-content{
+    margin-left: 60px;
+}
+
+.feature-title{
+    font-size: 55px;
+    font-weight: bold;
+    color: #131313;
+}
+
+.feature-text{
+    margin-top: 45px;
+    font-size: 20px;
+    font-weight: 400;
+    color: lightslategray;
+    line-height: 30px;
+}
+
+.feature-content .primary-btn{
+    margin-top: 30px;
+}
+
+.feature-title .color-1 {
+    font-weight: 500;
+    color: lightslategray;
+}
+
+.feature-title .color {
+    color: #FF900E;
+}
+
+@media screen and (max-width:576px) {
+    .navbar{
+        flex-direction: column;
+        padding: 60px 0 0;
+    }
+
+    .logo .logo-link{
+        font-size: 35px;
+    }
+
+
+    .banner-title{
+        padding: 20px 0 0;
+    }
+
+    .navbar-nav .nav-item{
+        padding: 50px 10px 0;
+    }
+
+    .banner-title{
+        font-size: 45px;
+    }
+}
+
